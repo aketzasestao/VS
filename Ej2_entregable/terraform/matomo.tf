@@ -15,7 +15,7 @@ resource "kubernetes_deployment" "matomo" {
           port { container_port = 80 }
           env {
             name  = "MATOMO_DATABASE_HOST"
-            value = "service-mariadb"
+            value = var.db_host
           }
           env {
             name  = "MATOMO_DATABASE_USERNAME"

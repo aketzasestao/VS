@@ -1,3 +1,8 @@
+variable "db_host" {
+  type      = string
+  default   = "service-mariadb"
+}
+
 variable "db_root_password" {
   type      = string
   default   = "rootpass"
