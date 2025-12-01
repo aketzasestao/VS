@@ -56,7 +56,6 @@ resource "kubernetes_service" "mariadb" {
     port {
       name = "mysql"
       port = 3306
-      target_port = 3306
     }
   }
 }

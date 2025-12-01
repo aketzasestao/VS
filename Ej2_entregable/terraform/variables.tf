@@ -1,6 +1,6 @@
 variable "matomo_image" {
   type    = string
-  default = "aketza/matomo-custom:latest"
+  default = "aketzacitores/matomo-custom:latest"
 }
 
 variable "db_root_password" {

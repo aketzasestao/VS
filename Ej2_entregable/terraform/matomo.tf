@@ -4,7 +4,7 @@ resource "kubernetes_deployment" "matomo" {
     labels = { app = "matomo" }
   }
   spec {
-    replicas = var.matomo_replicas
+    replicas = 1
     selector { match_labels = { app = "matomo" } }
     template {
       metadata { labels = { app = "matomo" } }
@@ -56,7 +56,6 @@ resource "kubernetes_service" "matomo" {
     port {
       name = "http"
       port = 80
-      target_port = 80
       node_port = 30081
     }
   }
