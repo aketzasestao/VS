@@ -1,8 +1,3 @@
-variable "matomo_image" {
-  type    = string
-  default = "aketzacitores/matomo-custom:latest"
-}
-
 variable "db_root_password" {
   type      = string
   default   = "rootpass"

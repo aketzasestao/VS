@@ -11,7 +11,7 @@ resource "kubernetes_deployment" "matomo" {
       spec {
         container {
           name  = "matomo"
-          image = var.matomo_image
+          image = "aketzacitores/matomo-custom:latest"
           port { container_port = 80 }
           env {
             name  = "MATOMO_DATABASE_HOST"
